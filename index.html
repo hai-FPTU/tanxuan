@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f766e">
+<meta name="description" content="Giáo trình tương tác tập huấn kỹ năng số cho cán bộ Xã Tân Xuân, tỉnh Vĩnh Long: ứng dụng AI cơ bản, VNeID và Sổ sức khỏe điện tử, dịch vụ công trực tuyến, Smart Vĩnh Long. Biên soạn: SaigonLab.">
+<title>Kỹ năng số cho cán bộ xã – Giáo trình tương tác | Xã Tân Xuân, Vĩnh Long</title>
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/sim.css">
+</head>
+<body>
+<a class="skip" href="#view">Bỏ qua, tới nội dung chính</a>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#home" aria-label="Trang chủ giáo trình">
+      <img src="img/logo.svg" alt="" width="40" height="40">
+      <span><b>KỸ NĂNG SỐ CÁN BỘ XÃ</b><small>Xã Tân Xuân · Vĩnh Long · SaigonLab</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Điều hướng chính"></nav>
+    <div class="tools">
+      <span class="xpchip" title="Điểm kinh nghiệm"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/></svg><b id="xp">0</b></span>
+      <button class="iconbtn" id="sndBtn" aria-pressed="true" aria-label="Bật/tắt âm thanh" title="Âm thanh"></button>
+      <button class="iconbtn" id="fontBtn" aria-label="Đổi cỡ chữ" title="Cỡ chữ"></button>
+      <button class="iconbtn menu-btn" id="menuBtn" aria-label="Mở danh mục" aria-expanded="false"></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-bg" data-close></div>
+  <div class="drawer-panel" role="dialog" aria-label="Danh mục">
+    <div class="drawer-head"><b>Danh mục</b><button class="iconbtn" data-close aria-label="Đóng"></button></div>
+    <nav id="drawerNav"></nav>
+  </div>
+</div>
+
+<main id="view" tabindex="-1"></main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="brand light"><img src="img/logo.svg" alt="" width="36" height="36"><span><b>KỸ NĂNG SỐ CHO CÁN BỘ XÃ</b><small>AI cơ bản · VNeID · Dịch vụ công · Smart Vĩnh Long</small></span></div>
+      <p>Tài liệu tập huấn dành cho cán bộ, công chức và lực lượng hỗ trợ chuyển đổi số của Xã Tân Xuân, tỉnh Vĩnh Long.</p>
+      <p class="small">Đơn vị biên soạn: SaigonLab. Mọi giao diện ứng dụng trong tài liệu là <b>bản mô phỏng tập huấn</b>, không phải trang thật. Tên người, số định danh, số điện thoại, mã thẻ đều là dữ liệu giả định. Tiến độ chỉ lưu trên máy này.</p>
+    </div>
+    <div>
+      <h4>Khám phá</h4>
+      <ul class="foot-links" id="footLinks"></ul>
+    </div>
+    <div>
+      <h4>Tra cứu văn bản gốc</h4>
+      <ul class="foot-links">
+        <li><a href="https://vbpl.moj.gov.vn" target="_blank" rel="noopener">Cơ sở dữ liệu quốc gia về VBPL</a></li>
+        <li><a href="https://congbao.chinhphu.vn" target="_blank" rel="noopener">Công báo Chính phủ</a></li>
+        <li><a href="https://vanban.chinhphu.vn" target="_blank" rel="noopener">Hệ thống văn bản Chính phủ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>SaigonLab · Tập huấn kỹ năng số – Xã Tân Xuân, tỉnh Vĩnh Long · 2026</span>
+    <span id="footCheck"></span>
+  </div>
+</footer>
+
+<nav class="tabbar" id="tabbar" aria-label="Điều hướng nhanh"></nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="sr-only" id="srLive" aria-live="assertive"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script src="js/icons.js"></script>
+<script src="js/data-course.js"></script>
+<script src="js/data-law.js"></script>
+<script src="js/core.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/ex-ai.js"></script>
+<script src="js/ex-vneid.js"></script>
+<script src="js/ex-dvc.js"></script>
+<script src="js/ex-svl.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
